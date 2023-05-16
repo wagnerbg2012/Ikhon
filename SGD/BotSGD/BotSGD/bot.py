@@ -52,6 +52,7 @@ class Bot(DesktopBot):
             self.not_found("entrar")
         self.click()
         
+        
         if not self.find( "documentos", matching=0.97, waiting_time=10000):
             self.not_found("documentos")
         self.click()
@@ -60,13 +61,52 @@ class Bot(DesktopBot):
             self.not_found("incluir")
         self.click()
         
+        
         if not self.find( "assunto", matching=0.97, waiting_time=10000):
             self.not_found("assunto")
         self.click()
         self.paste("dsafsadsadsdfdsfsd")
-                               
+        
+        if not self.find( "especie", matching=0.97, waiting_time=10000):
+            self.not_found("especie")
+        self.click()
+        
+        if not self.find( "alvara", matching=0.97, waiting_time=10000):
+            self.not_found("alvara")
+        self.click()
+        
+        if not self.find( "classificacao", matching=0.97, waiting_time=10000):
+            self.not_found("classificacao")
+        self.click()
+        
+        if not self.find( "relatorio", matching=0.97, waiting_time=10000):
+            self.not_found("relatorio")
+        self.click()
+        
+        if not self.find( "interessados", matching=0.97, waiting_time=10000):
+            self.not_found("interessados")
+        self.click()
+        
+        if not self.find( "nome", matching=0.97, waiting_time=10000):
+            self.not_found("nome")
+        self.click()
+        self.paste("wedson silva")
+        
+        if not self.find( "pesquisar", matching=0.97, waiting_time=10000):
+            self.not_found("pesquisar")
+        self.click()
+        
+        if not self.find( "selecionar", matching=0.97, waiting_time=10000):
+            self.not_found("selecionar")
+        self.click()
+        
+        if not self.find( "incluir usuario", matching=0.97, waiting_time=10000):
+            self.not_found("incluir usuario")
+        self.click()
         
         
+
+       
         
         # Uncomment to mark this task as finished on BotMaestro
         # self.maestro.finish_task(
