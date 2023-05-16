@@ -39,24 +39,7 @@ class Bot(DesktopBot):
         # Opens the BotCity website.
         self.browse("https://seplan-layout-d.ikhon.com.br/")
         
-        if not self.find( "CPF", matching=0.97, waiting_time=10000):
-            self.not_found("CPF")
-        self.click()
-        self.paste("023.020.731-69")
-        
-        if not self.find( "senha", matching=0.97, waiting_time=10000):
-            self.not_found("senha")
-        self.click()
-        self.paste("1234")
-        
-        if not self.find( "entrar", matching=0.97, waiting_time=10000):
-            self.not_found("entrar")
-        self.click()
-        
-        
-                       
-                        
-        
+
         # Uncomment to mark this task as finished on BotMaestro
         # self.maestro.finish_task(
         #     task_id=execution.task_id,
